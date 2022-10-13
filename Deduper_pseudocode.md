@@ -37,7 +37,7 @@ Note: need to develop a strategy to prevent dictionary from getting too big. May
 def get_chrom(sam_line: str) -> str:
     '''
     Takes the current line of the SAM file as an argument and returns the
-    chromosome number (second field, RNAME).
+    chromosome number (3rd field, RNAME).
     '''
     return chrom_num
 ```
