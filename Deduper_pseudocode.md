@@ -41,7 +41,7 @@ def get_chrom(sam_line: str) -> str:
     '''
     return chrom_num
 ```
-Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	31	2	100	63	1S3M2D4N1S  
+Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	31	2	100	36	1S3M2D4N1S  
 Expected output: 2  
 
 ```
@@ -55,7 +55,7 @@ def get_pos(sam_line: str) -> int:
     '''
     return adjusted_start_pos
 ```
-Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	31	2	100	63	1S3M2D4N1S  
+Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	31	2	100	36	1S3M2D4N1S  
 Expected output: 109  
 
 ```
@@ -66,7 +66,7 @@ def get_UMI(sam_line: str) -> str:
     '''
     return umi
 ```
-Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	31	2	100	63	1S3M2D4N1S  
+Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	31	2	100	36	1S3M2D4N1S  
 Expected output: CTGTTCAC  
 
 ```
@@ -80,5 +80,5 @@ def get_strand(sam_line: str) -> bool:
     '''
     return is_plus_strand
 ```
-Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	31	2	100	63	1S3M2D4N1S  
+Test input: NS500451:154:HWKTMBGXX:1:11101:24260:1121:CTGTTCAC	63	2	100	36	1S3M2D4N1S  
 Expected output: False  
