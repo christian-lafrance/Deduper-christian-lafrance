@@ -8,7 +8,7 @@ def get_args():
     This script reads in a SAM file containing single-end reads and outputs another SAM file with 
     PCR duplicates removed. It assumes that two reads are duplciates if they are on the same
     strand and chromosome, have the same left-most start position, and have the same UMI. 
-    Requires the input SAM file to be sorted by chromosome. Assumes a stranded library prep
+    The input SAM file does not need to be sorted. Assumes a stranded library prep
     kit was used. 
     ''')
     parser.add_argument("-f", help="Designates absolute file path to sorted sam file", required=False, type=str)
